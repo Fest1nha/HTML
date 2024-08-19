@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<script>
+
+
+    function pularLinha() {
+
+        document.write('<br>');
+        document.write('<br>');
+
+}
+
+    function print(string) {
+
+        document.write(string);
+        pularLinha();
+
+}
+
+    function calculaImc(peso, altura) {
+
+        return peso / (altura * altura);  
+        
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+
+    var tentativas = 1;
+
+    while(tentativas <= 3) {
+        
+        var chute = parseInt(prompt('Digite seu Chute!'));
+
+    if(chute == numeroPensado) {
+        print('Você Acertou!');
+        break
+    } else{
+        print('Você errou');
+    }
+
+    tentativas++;
+}
+
+    print('FIM')
+
+
+</script>
